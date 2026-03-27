@@ -5,24 +5,24 @@ ACTIVITATI_EXTRASCOLARE:
 
             - view_name: acasa
               url_path_name: acasa
-              template_name: acasa.html
+              template_name: acasa
 
             - view_name: lista_activitati
               url_path_name: activitati
-              template_name: activitati.html
+              template_name: activitati
 
             - view_name: activitate_detalii
               url_path_name: detalii
-              template_name: activitate_detalii.html
+              template_name: activitate_detalii
 
         # Schimba APP_NAME2 cu numele aplicatiei
         utilizatori:
             - view_name: login_view
               url_path_name: login
-              template_name: login.html
+              template_name: login
 
             - view_name: logout_view
               url_path_name: logout
-              template_name: logout.html
+              template_name: logout
 
         # Mai adauga aplicatii si view-uri in acest fel

@@ -4,8 +4,7 @@ from .views import lista_activitati_view
 from .views import acasa_view
 
 urlpatterns = [
-
-	path("acasa", acasa_view),
-	path("activitati", lista_activitati_view),
-	path("detalii", activitate_detalii_view),
+    path('', acasa_view, name="home"),
+    path('activitati/', lista_activitati_view, name="activitati"),
+    path('activitati/<int:id>/', activitate_detalii_view, name="detail"),
 ]

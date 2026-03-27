@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+class Activitate(models.Model):
+    titlu = models.CharField(max_length=200)
+    descriere = models.TextField()
+    data = models.DateField()
+    categorie = models.CharField(max_length=100)
+    imagine = models.ImageField(upload_to='activitati/', blank=True)
+
+    def __str__(self):
+        return self.titlu
+
