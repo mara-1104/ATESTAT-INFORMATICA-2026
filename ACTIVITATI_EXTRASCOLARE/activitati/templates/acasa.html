@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>acasa</title>
-</head>
-<body>
-    <h1>acasa</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Activitati scolare</h1>
+
+<h2>Ultimele activitati</h2>
+
+{% for a in activitati %}
+<div>
+<h3>{{a.titlu}}</h3>
+<p>{{a.data}}</p>
+<a href="/activitati/{{a.id}}">Detalii</a>
+</div>
+{% endfor %}
+
+{% endblock %}
