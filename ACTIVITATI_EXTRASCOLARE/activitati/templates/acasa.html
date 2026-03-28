@@ -11,6 +11,11 @@
     <div class="activity-card">
         <h3>{{ a.titlu }}</h3>
         <p>{{ a.data }}</p>
+        {% if a.coordonator %}
+        <p>Coordonator: {{ a.coordonator }}</p>
+        {% else %}
+        <p>Coordonator: None</p>
+        {% endif %}
         <a href="/activitati/{{ a.id }}">Detalii</a>
     </div>
     {% endfor %}

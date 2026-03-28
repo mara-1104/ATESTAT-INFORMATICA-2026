@@ -12,3 +12,6 @@ def lista_activitati_view(request):
 def activitate_detalii_view(request, id):
     activitate = get_object_or_404(Activitate, id=id)
     return render(request, "activitate_detalii.html", {"activitate": activitate})
+
+def despre_view(request):
+    return render(request, "despre.html")

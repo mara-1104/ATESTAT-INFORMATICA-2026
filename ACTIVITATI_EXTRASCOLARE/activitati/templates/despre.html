@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% include "header.html" %}
+{% include "footer.html" %}
+
+{% block content %}
+<section class="about-section">
+    <h1>Despre noi</h1>
+    <div class="about-content">
+        <div class="team-container">
+            <div class="team-card">
+                <img src="/static/img/elev1.jpg" alt="Mara Georgescu">
+                <h3>Mara Georgescu</h3>
+                <p>Dezvoltatorul aplicației</p>
+                <p>Elev în clasa a XII-a B la Colegiul Național "Matei Basarab"</p>
+            </div>
+        </div>
+        <div class="about-paragraphs">
+            <p>
+                Platforma activităților extrașcolare a fost creată pentru a facilita accesul elevilor la informații despre evenimentele organizate în cadrul liceului.
+                Scopul nostru este de a promova implicarea elevilor în activități educaționale, culturale și sociale.
+            </p>
+
+            <h2>Ce este această platformă?</h2>
+
+            <p>
+                Această aplicație web permite vizualizarea activităților extracurriculare organizate în liceu, oferind informații detaliate despre fiecare eveniment.
+                Elevii pot descoperi activități precum concursuri, workshopuri, proiecte de voluntariat sau evenimente culturale.
+            </p>
+
+            <h2>Misiunea noastră</h2>
+
+            <p>
+                Ne dorim să încurajăm participarea activă a elevilor și să creăm un mediu educațional dinamic, în care fiecare elev să își poată dezvolta abilitățile și pasiunile.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

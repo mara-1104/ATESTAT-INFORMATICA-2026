@@ -13,6 +13,11 @@
 
         <p class="detail-meta">
             📅 {{ activitate.data }} | 📂 {{ activitate.categorie }}
+            {% if activitate.coordonator %}
+            | 👩‍🏫 Coordonator: {{ activitate.coordonator }}
+            {% else %}
+            | 👩‍🏫 Coordonator: None
+            {% endif %}
         </p>
 
         <p class="detail-description">
