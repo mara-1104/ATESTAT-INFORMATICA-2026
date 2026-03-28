@@ -274,11 +274,11 @@ footer {
     margin: 5px 0;
 }
 
-/* Styling for the Despre page */
+
 .about-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex;
     margin: 20px;
 }
 
@@ -305,6 +305,13 @@ footer {
     color: #333333;
     font-size: 16px;
     line-height: 1.6;
+}
+
+.about-paragraphs h2, .about-paragraphs h3 {
+    text-align: left !important;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
 }
 
 .team-container {
