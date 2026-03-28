@@ -2,14 +2,28 @@
 
 {% block content %}
 
-<h1>{{activitate.titlu}}</h1>
+<div class="detail-container">
 
-<p>{{activitate.data}}</p>
+    {% if activitate.imagine %}
+        <img src="{{ activitate.imagine.url }}" class="detail-image">
+    {% endif %}
 
-<p>{{activitate.descriere}}</p>
+    <div class="detail-content">
+        <h1>{{ activitate.titlu }}</h1>
 
-{% if activitate.imagine %}
-<img src="{{activitate.imagine.url}}" width="400">
-{% endif %}
+        <p class="detail-meta">
+            📅 {{ activitate.data }} | 📂 {{ activitate.categorie }}
+        </p>
+
+        <p class="detail-description">
+            {{ activitate.descriere }}
+        </p>
+
+        <a href="{% url 'activitati' %}" class="back-btn">
+            ← Înapoi la activități
+        </a>
+    </div>
+
+</div>
 
 {% endblock %}

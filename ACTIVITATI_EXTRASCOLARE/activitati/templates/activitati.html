@@ -2,14 +2,22 @@
 
 {% block content %}
 
-<h1>Toate activitatile</h1>
+<h2>Toate activitățile</h2>
 
-{% for a in activitati %}
-<div>
-<h2>{{a.titlu}}</h2>
-<p>{{a.data}}</p>
-<a href="/activitati/{{a.id}}">Vezi activitatea</a>
+<div class="activities-container">
+    {% for a in activitati %}
+        <div class="activity-card">
+            
+            {% if a.imagine %}
+                <img src="{{ a.imagine.url }}">
+            {% endif %}
+
+            <h3>{{ a.titlu }}</h3>
+            <p>{{ a.data }}</p>
+
+            <a href="/activitati/{{ a.id }}">Detalii</a>
+        </div>
+    {% endfor %}
 </div>
-{% endfor %}
 
 {% endblock %}
