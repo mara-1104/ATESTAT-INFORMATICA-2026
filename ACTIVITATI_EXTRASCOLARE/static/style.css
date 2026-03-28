@@ -1,10 +1,10 @@
-/* RESET */
+
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* BODY LAYOUT (fix footer) */
+/* BODY LAYOUT */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     display: flex;
@@ -15,7 +15,7 @@ body {
     color: #8b0000;
 }
 
-/* NAVBAR (singurul!) */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ body {
     width: 100%;
 }
 
-/* HEADER (NU MAI E FIXED) */
+/* HEADER */
 header {
     text-align: center;
     padding: 60px 20px 30px;
@@ -157,7 +157,7 @@ img {
     margin-bottom: 10px;
 }
 
-/* FOOTER (fix corect) */
+/* FOOTER */
 footer {
     background: #8b0000;
     color: #d6d6d6;
@@ -245,9 +245,9 @@ footer {
 
 /* CARD */
 .team-card {
-    background: #d6d6d6; /* Main color */
-    color: #8b0000; /* Secondary color */
-    border: 1px solid #8b0000; /* Very dark red border */
+    background: #d6d6d6; 
+    color: #8b0000; 
+    border: 1px solid #8b0000;
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -287,7 +287,7 @@ footer {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #8b0000; /* Secondary color */
+    color: #8b0000; 
 }
 
 .about-content {
@@ -322,9 +322,9 @@ footer {
 }
 
 .team-card {
-    background: #d6d6d6; /* Main color */
-    color: #8b0000; /* Secondary color */
-    border: 1px solid #8b0000; /* Very dark red border */
+    background: #d6d6d6;
+    color: #8b0000; 
+    border: 1px solid #8b0000;
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
