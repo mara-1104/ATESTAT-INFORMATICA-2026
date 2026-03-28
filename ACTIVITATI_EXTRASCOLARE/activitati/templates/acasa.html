@@ -6,13 +6,14 @@
 {% block content %}
 
 <h2>Ultimele activitati</h2>
-
-{% for a in activitati %}
-<div>
-<h3>{{a.titlu}}</h3>
-<p>{{a.data}}</p>
-<a href="/activitati/{{a.id}}">Detalii</a>
+<div class="activities-container">
+    {% for a in activitati %}
+    <div class="activity-card">
+        <h3>{{ a.titlu }}</h3>
+        <p>{{ a.data }}</p>
+        <a href="/activitati/{{ a.id }}">Detalii</a>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
 
 {% endblock %}
