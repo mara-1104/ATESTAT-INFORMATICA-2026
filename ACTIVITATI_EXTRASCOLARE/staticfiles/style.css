@@ -1,0 +1,47 @@
+body{
+font-family: Arial;
+margin:40px;
+}
+
+nav a{
+margin-right:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+div{
+margin-bottom:20px;
+padding:10px;
+border:1px solid #ddd;
+}
+
+header {
+    background-color: darkred;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
